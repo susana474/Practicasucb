@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área de Docentes - Prácticas Profesionales UCB</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Área de Docentes - Prácticas Profesionales UCB</h1>
+  </header>
+
+  <!-- Sección de Solicitudes de Prácticas -->
+  <section id="solicitudes">
+    <h2>Solicitudes de Prácticas</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Estudiante</th>
+          <th>Carrera</th>
+          <th>Mensaje</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tablaSolicitudes">
+        <!-- Ejemplo de solicitud -->
+        <tr>
+          <td>Juan Perez</td>
+          <td>Ingeniería</td>
+          <td>Interesado en prácticas de software.</td>
+          <td>
+            <button onclick="aceptarSolicitud()">Aceptar</button>
+            <button onclick="rechazarSolicitud()">Rechazar</button>
+          </td>
+        </tr>
+        <!-- Las filas se pueden generar dinámicamente con JavaScript si es necesario -->
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Sección de Reporte de Prácticas Concluidas -->
+  <section id="reporte">
+    <h2>Reporte de Prácticas Concluidas</h2>
+    <div class="filtros">
+      <label for="filtroGestion">Gestión:</label>
+      <select id="filtroGestion">
+        <option value="2024">2024</option>
+        <option value="2023">2023</option>
+        <!-- Más opciones -->
+      </select>
+
+      <label for="filtroCarrera">Carrera:</label>
+      <select id="filtroCarrera">
+        <option value="ingenieria">Ingeniería</option>
+        <option value="administracion">Administración</option>
+        <!-- Más opciones -->
+      </select>
+
+      <button onclick="filtrarReporte()">Filtrar</button>
+    </div>
+    <table id="tablaReporte">
+      <thead>
+        <tr>
+          <th>Estudiante</th>
+          <th>Carrera</th>
+          <th>Gestión</th>
+          <th>Conclusión</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Datos filtrados de las prácticas concluidas -->
+      </tbody>
+    </table>
+  </section>
+
+  <script src="docente.js"></script> <!-- Archivo de JS específico para docente.html -->
+</body>
+</html>

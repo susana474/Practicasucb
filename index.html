@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prácticas Profesionales - UCB</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header y Navegación Principal -->
+  <header>
+    <h1>Prácticas Profesionales UCB</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#solicitud">Enviar Solicitud</a>
+      <a href="#login">Acceso Docentes y Empresas</a>
+    </nav>
+  </header>
+
+  <!-- Sección de Inicio -->
+  <section id="inicio">
+    <h2>Empresas Asociadas</h2>
+    <div class="empresas-logos">
+        <div class="empresa-item">
+            <img src="imagenes\Inti-logo-footer.png" alt="Droguería Inti">
+            <p>Droguería INTI</p>
+        </div>
+        <div class="empresa-item">
+            <img src="imagenes/logo-1.png" alt="DELIzIA">
+            <p>Delizia</p>
+           </div>
+           <div class="empresa-item">
+            <img src="imagenes\images.png" alt="CBN">
+            <p>Cervecería Boliviana Nacional S.A.</p>
+        </div>
+        <div class="empresa-item">
+            <img src="imagenes/msc.png" alt="MSC">
+            <p>Mediterranean Shipping Company (Bolivia) Ltda</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- Formulario de Solicitud de Estudiantes -->
+  <section id="solicitud">
+    <h2>Enviar Solicitud de Prácticas</h2>
+    <form id="solicitudForm">
+      <label for="nombre">Nombre Completo:</label>
+      <input type="text" id="nombre" required>
+      
+      <label for="carrera">Carrera:</label>
+      <input type="text" id="carrera" required>
+      
+      <label for="carrera">Empresa:</label>
+      <input type="text" id="carrera" required>
+
+      <label for="carrera">Duración:</label>
+      <input type="text" id="carrera" required>
+
+      <label for="carrera">Supervisor:</label>
+      <input type="text" id="carrera" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" required></textarea>
+      
+      <button type="submit">Enviar Solicitud</button>
+    </form>
+  </section>
+
+  <!-- Login para Docentes y Empresas -->
+  <section id="login">
+    <h2>Acceso Docentes y Empresas</h2>
+    <form id="loginForm">
+      <label for="codigo">Código de Acceso:</label>
+      <input type="password" id="codigo" required>
+      <button type="submit">Ingresar</button>
+    </form>
+  </section>
+  
+  <script src="script.js"></script>
+</body>
+</html>

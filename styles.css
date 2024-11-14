@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f5;
+  color: #333;
+}
+
+header {
+  background-color: #003366; /* Color principal */
+  padding: 1em;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 1em;
+  text-decoration: none;
+}
+
+section {
+  padding: 2em;
+}
+
+/* Estilo general para el contenedor de logos */
+.empresas-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que los logos se distribuyan en varias filas */
+  gap: 50px; /* Espacio entre logos */
+  margin-top: 50px;
+}
+
+.empresa-item {
+  display: flex;
+  flex-direction: column; /* Coloca la imagen y el texto en columna */
+  align-items: center; /* Centra la imagen y el texto */
+  text-align: center;
+}
+
+.empresa-item img {
+  width: 150px; /* Ajusta el tamaño de las imágenes según prefieras */
+  height: auto;
+  transition: transform 0.3s ease; /* Transición para el efecto de agrandar */
+}
+
+.empresa-item img:hover {
+  transform: scale(1.1); /* Agranda la imagen al pasar el mouse */
+}
+
+.empresa-item p {
+  margin-top: 10px;
+  font-size: 1em; /* Ajusta el tamaño de la fuente */
+  color: #333; /* Cambia el color si es necesario */
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea, select, button {
+  margin: 0.5em 0;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+  padding: 0.5em;
+  text-align: left;
+}
+
+th {
+  background-color: #003366;
+  color: white;
+}
+
+button {
+  background-color: #006699;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005580;
+}
