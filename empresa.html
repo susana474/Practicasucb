@@ -1,20 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evaluación del Practicante</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área de Empresas - Evaluación de Prácticantes</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Evaluación del Practicante</h1>
+  <!-- Header -->
+
+  <html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prácticas Profesionales - UCB</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+<body>
+  <!-- Header y Navegación Principal -->
+  <header>
+    <h1>Prácticas Profesionales UCB</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+      <a href="index.html">Enviar Solicitud</a>
+      <a href="index.html">Acceso Docentes y Empresas</a>
+    </nav>
+  </header>
+
+  <header>
+    <h1>Área de Empresas - Evaluación de Practicantes</h1>
+  </header>
+
+  <!-- Formulario de Evaluación -->
+  <section id="evaluacion">
+    <h2>Evaluación de Practicantes</h2>
     <form id="evaluacionForm">
-        <input type="text" name="studentId" placeholder="ID del estudiante" required>
-        <textarea name="desempeno" placeholder="Desempeño del practicante" required></textarea>
-        <textarea name="habilidades" placeholder="Habilidades técnicas observadas" required></textarea>
-        <textarea name="actitudes" placeholder="Actitudes y comportamiento" required></textarea>
-        <textarea name="observaciones" placeholder="Observaciones adicionales"></textarea>
-        <button type="submit">Enviar Evaluación</button>
+      <label for="practicante">Nombre del Practicante:</label>
+      <input type="text" id="practicante" placeholder="Escribe el nombre del practicante" required>
+
+      <label for="carrera">Carrera:</label>
+      <input type="text" id="carrera" placeholder="Carrera del practicante" required>
+
+      <label for="evaluacion">Evaluación:</label>
+      <textarea id="evaluacion" placeholder="Escribe una evaluación detallada del desempeño" required></textarea>
+
+      <label for="calificacion">Calificación (1-5):</label>
+      <select id="calificacion" required>
+        <option value="">Selecciona una calificación</option>
+        <option value="1">1 - Muy malo</option>
+        <option value="2">2 - Malo</option>
+        <option value="3">3 - Regular</option>
+        <option value="4">4 - Bueno</option>
+        <option value="5">5 - Excelente</option>
+      </select>
+
+      <button type="submit">Enviar Evaluación</button>
     </form>
-    <script src="empresa.js"></script>
+  </section>
+
+  <script src="empresa.js"></script>
 </body>
 </html>

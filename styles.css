@@ -101,3 +101,38 @@ button {
 button:hover {
   background-color: #005580;
 }
+
+/* Estilo general para el formulario de evaluación */
+#evaluacion {
+  margin: 2em auto;
+  max-width: 600px;
+  padding: 2em;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+#evaluacionForm label {
+  display: block;
+  margin-top: 1em;
+}
+
+#evaluacionForm input, #evaluacionForm textarea, #evaluacionForm select, #evaluacionForm button {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#evaluacionForm button {
+  background-color: #006699;
+  color: white;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+}
+
+#evaluacionForm button:hover {
+  background-color: #005580;
+}
